@@ -6,6 +6,8 @@ A modern, accessible React component library built with TypeScript and Tailwind 
 
 Atelier Design System was built for Reinvention Frameworks, where AI consulting meets real-world implementation. This is the design language behind every template, tool, and solution I create — engineered to help businesses cut through the hype and ship what matters.
 
+Part of [The Wednesday Collective](https://www.thewednesdaycollective.com/)
+
 — Mirabelle
 
 ## Tech Stack
@@ -22,6 +24,7 @@ Atelier Design System was built for Reinvention Frameworks, where AI consulting 
 ## What's Inside
 
 50+ production-ready components designed for real-world applications:
+
 - **Forms**: Input, Select, Checkbox, Radio, Textarea, and more
 - **Layout**: Card, Sheet, Dialog, Drawer, Sidebar
 - **Navigation**: Tabs, Breadcrumb, Navigation Menu, Menubar
@@ -54,4 +57,4 @@ npm run preview
 
 ---
 
-Built by [Mirabelle](https://github.com/mirabelle514) for Reinvention Frameworks
+Built by [Mirabelle](https://github.com/mirabelle514) for [The Wednesday Collective](https://www.thewednesdaycollective.com/)
