@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
+# Atelier Design System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, accessible React component library built with TypeScript and Tailwind CSS.
 
-Currently, two official plugins are available:
+## About Atelier
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Atelier Design System was built for Reinvention Frameworks, where AI consulting meets real-world implementation. This is the design language behind every template, tool, and solution I create — engineered to help businesses cut through the hype and ship what matters.
 
-## Expanding the ESLint configuration
+— Mirabelle
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- **React 18** - Modern React with hooks and concurrent features
+- **TypeScript** - Type-safe component development
+- **Vite** - Lightning-fast build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **Radix UI** - Unstyled, accessible component primitives
+- **Shadcn/ui** - Component architecture and styling patterns
+- **Class Variance Authority** - Type-safe component variants
+- **Lucide React** - Beautiful icon library
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## What's Inside
+
+50+ production-ready components designed for real-world applications:
+- **Forms**: Input, Select, Checkbox, Radio, Textarea, and more
+- **Layout**: Card, Sheet, Dialog, Drawer, Sidebar
+- **Navigation**: Tabs, Breadcrumb, Navigation Menu, Menubar
+- **Data Display**: Table, Avatar, Badge, Skeleton
+- **Feedback**: Toast, Alert, Progress, Spinner
+- **Plus**: Carousel, Command Menu, Calendar, Charts, and more
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Built With Modern Tools
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Fast Refresh** for instant feedback during development
+- **ESLint** for maintaining code quality
+- **TypeScript** for type safety and better DX
+- **Tailwind CSS** for rapid, maintainable styling
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+Built by [Mirabelle](https://github.com/mirabelle514) for Reinvention Frameworks
