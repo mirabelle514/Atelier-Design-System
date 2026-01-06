@@ -1,0 +1,7 @@
+export { Navigation } from './Navigation'
+export { PortfolioHero } from './PortfolioHero'
+export { ProjectsSection } from './ProjectsSection'
+export { AboutSection } from './AboutSection'
+export { ContactSection } from './ContactSection'
+export { DesignSystemSection } from './DesignSystemSection'
+export { Footer } from './Footer'
