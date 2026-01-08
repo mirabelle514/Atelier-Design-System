@@ -1,0 +1,18 @@
+:root {
+  --atelier-brand-bg: #1a1a2e;
+  --atelier-brand-surface: #16213e;
+  --atelier-brand-surface-elevated: #1f2b47;
+  --atelier-brand-primary: #e94560;
+  --atelier-brand-primary-hover: #d63d56;
+  --atelier-brand-primary-light: #f8b4c4;
+  --atelier-brand-secondary: #4ecdc4;
+  --atelier-brand-secondary-light: #7eddd6;
+  --atelier-brand-text: #ffffff;
+  --atelier-brand-text-muted: #9ca3af;
+  --atelier-brand-text-subtle: #6b7280;
+  --atelier-brand-border: #4a3f6b;
+  --atelier-brand-border-light: rgba(255, 255, 255, 0.1);
+  --atelier-brand-success: #4ecdc4;
+  --atelier-brand-warning: #ffd93d;
+  --atelier-brand-error: #e94560;
+}
