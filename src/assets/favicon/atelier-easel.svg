@@ -1,0 +1,12 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Easel legs -->
+  <path d="M16 58L26 22" stroke="#6b6b7e" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M48 58L38 22" stroke="#6b6b7e" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M32 58V46" stroke="#6b6b7e" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Canvas -->
+  <rect x="14" y="6" width="36" height="32" rx="1" stroke="#6b6b7e" stroke-width="1.5"/>
+  <!-- Paint stroke on canvas -->
+  <path d="M22 26C26 18 34 22 38 16" stroke="#6b6b7e" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Accent dot -->
+  <circle cx="44" cy="12" r="2.5" fill="#e8c4c0"/>
+</svg>

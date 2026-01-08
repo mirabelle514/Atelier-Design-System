@@ -4,9 +4,13 @@ A modern, accessible React component library built with TypeScript and Tailwind 
 
 ## About Atelier
 
-Atelier Design System was built for Reinvention Frameworks, where AI consulting meets real-world implementation. This is the design language behind every template, tool, and solution I create — engineered to help businesses cut through the hype and ship what matters.
+Atelier Design System is the design language behind every template and tool I build — engineered to close the workflow gap between designers and engineers and help teams ship faster and with less friction.
 
 Part of [The Wednesday Collective](https://www.thewednesdaycollective.com/)
+
+## Links
+
+- **Figma Library**: [Atelier (Figma)](https://www.figma.com/design/5JADpXkx4NjukMAmWfvdFq/Atelier?node-id=7-917&t=b5Hbc0eZ4u6vIXcT-1)
 
 — Mirabelle
 

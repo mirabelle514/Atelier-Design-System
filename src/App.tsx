@@ -10,6 +10,9 @@ import {
   Check
 } from 'lucide-react'
 
+const FIGMA_LIBRARY_URL =
+  'https://www.figma.com/design/5JADpXkx4NjukMAmWfvdFq/Atelier?node-id=7-917&t=b5Hbc0eZ4u6vIXcT-1'
+
 interface ColorSwatchProps {
   token: string
   hex: string
@@ -92,18 +95,29 @@ function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <div className="text-xl font-bold text-brand-primary">Atelier</div>
         
-        <ul className="hidden md:flex gap-8">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <a 
-                href={link.href} 
-                className="text-brand-text-muted text-sm hover:text-brand-text transition-colors"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="hidden md:flex items-center gap-8">
+          <ul className="flex gap-8">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <a 
+                  href={link.href} 
+                  className="text-brand-text-muted text-sm hover:text-brand-text transition-colors"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <a
+            href={FIGMA_LIBRARY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-brand-text-muted text-sm hover:text-brand-text transition-colors"
+          >
+            Figma Library
+          </a>
+        </div>
 
         <button 
           className="md:hidden text-brand-text"
@@ -128,6 +142,17 @@ function Navigation() {
                 </a>
               </li>
             ))}
+            <li>
+              <a
+                href={FIGMA_LIBRARY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-text-muted text-sm hover:text-brand-text transition-colors block"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Figma Library
+              </a>
+            </li>
           </ul>
         </div>
       )}
@@ -141,7 +166,7 @@ function HeroSection() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand-primary/10 rounded-full blur-3xl pointer-events-none" />
       <div className="relative z-10">
         <span className="inline-block bg-brand-surface border border-brand-border px-4 py-2 rounded-full text-sm text-brand-secondary mb-8">
-          Design System v1.0
+          Design System v2.0
         </span>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
           <span className="text-brand-primary">Atelier</span>
@@ -149,10 +174,7 @@ function HeroSection() {
           Design System
         </h1>
         <p className="text-lg md:text-xl text-brand-text-muted max-w-xl mx-auto mb-4">
-          A comprehensive design system for the Atelier portfolio website.
-        </p>
-        <p className="text-base text-brand-secondary">
-          Transform AI from buzzword to business value
+          A comprehensive design system for The Wednesday Collective.
         </p>
       </div>
     </header>
@@ -692,6 +714,16 @@ function Footer() {
       </p>
       <p className="text-brand-text-muted text-sm mt-2">
         Transform AI from buzzword to business value
+      </p>
+      <p className="text-brand-text-muted text-sm mt-4">
+        <a
+          href={FIGMA_LIBRARY_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-brand-text transition-colors"
+        >
+          Figma Library
+        </a>
       </p>
       <p className="text-brand-text-muted text-sm mt-4">
         Part of The Wednesday Collective / built by Mirabelle with love &#10084; for all pets
