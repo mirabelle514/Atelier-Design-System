@@ -88,6 +88,7 @@ function Navigation() {
     { href: '#layout', label: 'Layout' },
     { href: '#effects', label: 'Effects' },
     { href: '#accessibility', label: 'Accessibility' },
+    { href: '#tokens', label: 'Tokens' },
   ]
 
   return (
@@ -174,7 +175,7 @@ function HeroSection() {
           Design System
         </h1>
         <p className="text-lg md:text-xl text-brand-text-muted max-w-xl mx-auto mb-4">
-          A comprehensive design system for The Wednesday Collective.
+          Bridging design and engineering so teams ship faster with less friction.
         </p>
       </div>
     </header>
@@ -463,6 +464,52 @@ function SpacingSection() {
   )
 }
 
+function TokensSection() {
+  return (
+    <section id="tokens" className="py-20 px-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-primary mb-4">Tokens</h2>
+          <p className="text-lg text-brand-text-muted max-w-3xl mx-auto">
+            Download the design tokens in JS, JSON, or CSS. These are generated from the <code className="font-mono text-sm">tokens/</code> workspace package.
+          </p>
+        </div>
+
+        <div className="bg-brand-surface border border-brand-border rounded-xl p-6 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+          <div>
+            <p className="text-brand-text font-semibold">Download token files</p>
+            <p className="text-sm text-brand-text-muted mt-1">Files served from <code className="font-mono text-xs bg-brand-surface-elevated px-2 py-1 rounded text-brand-primary-light">/public/tokens</code></p>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="/tokens/tokens.json"
+              download
+              className="bg-brand-primary hover:bg-brand-primary-hover text-brand-text px-4 py-2 text-sm font-medium rounded-lg transition-colors"
+            >
+              tokens.json
+            </a>
+            <a
+              href="/tokens/tokens.js"
+              download
+              className="bg-transparent border-2 border-brand-text text-brand-text hover:bg-brand-text hover:text-brand-bg px-4 py-2 text-sm font-medium rounded-lg transition-all"
+            >
+              tokens.js
+            </a>
+            <a
+              href="/tokens/tokens.css"
+              download
+              className="bg-transparent border-2 border-brand-text text-brand-text hover:bg-brand-text hover:text-brand-bg px-4 py-2 text-sm font-medium rounded-lg transition-all"
+            >
+              tokens.css
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function LayoutSection() {
   return (
     <section id="layout" className="py-20 px-6">
@@ -708,26 +755,21 @@ STYLE_GUIDE.md    # Brand style guide`}
 
 function Footer() {
   return (
-    <footer className="py-12 px-6 bg-brand-surface border-t border-brand-border text-center">
-      <p className="text-brand-text-muted text-sm">
-        <strong className="text-brand-primary">Atelier</strong> Design System
-      </p>
-      <p className="text-brand-text-muted text-sm mt-2">
-        Transform AI from buzzword to business value
-      </p>
-      <p className="text-brand-text-muted text-sm mt-4">
-        <a
-          href={FIGMA_LIBRARY_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-brand-text transition-colors"
-        >
-          Figma Library
-        </a>
-      </p>
-      <p className="text-brand-text-muted text-sm mt-4">
-        Part of The Wednesday Collective / built by Mirabelle with love &#10084; for all pets
-      </p>
+    <footer className="py-12 px-6 bg-brand-bg">
+      <div className="max-w-7xl mx-auto text-center">
+        <p className="text-sm text-brand-text mb-4">
+          Design System for{' '}
+          <a
+            href="https://thewednesdaycollective.com"
+            className="text-brand-secondary underline underline-offset-4 hover:opacity-90"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            The Wednesday Collective
+          </a>{' '}
+          | copyright © 2026 Mirabelle | Powered by my love for Wednesday
+        </p>
+      </div>
     </footer>
   )
 }
@@ -741,6 +783,7 @@ function App() {
       <TypographySection />
       <ComponentsSection />
       <SpacingSection />
+      <TokensSection />
       <LayoutSection />
       <EffectsSection />
       <BreakpointsSection />

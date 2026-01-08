@@ -4,7 +4,7 @@ A modern, accessible React component library built with TypeScript and Tailwind 
 
 ## About Atelier
 
-Atelier Design System is the design language behind every template and tool I build — engineered to close the workflow gap between designers and engineers and help teams ship faster and with less friction.
+Atelier is the design system behind every template and tool I build — engineered to close the workflow gap between designers and engineers and help teams ship faster and with less friction.
 
 Part of [The Wednesday Collective](https://www.thewednesdaycollective.com/)
 

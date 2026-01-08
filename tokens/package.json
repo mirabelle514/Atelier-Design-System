@@ -1,15 +1,24 @@
 {
-  "name": "@atelier/design-tokens",
+  "name": "@atelier/tokens",
   "version": "1.0.0",
-  "description": "Design tokens for the Atelier Design System",
+  "description": "Design tokens for Atelier Design System",
+  "type": "module",
   "main": "dist/js/tokens.js",
-  "scripts": {
-    "build": "node build.js"
+  "types": "dist/js/tokens.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/js/tokens.d.ts",
+      "default": "./dist/js/tokens.js"
+    },
+    "./css": "./dist/css/tokens.css",
+    "./json": "./dist/json/tokens.json"
   },
-  "keywords": [
-    "design-tokens",
-    "atelier",
-    "design-system"
+  "scripts": {
+    "build": "node build.cjs",
+    "dev": "node build.cjs --watch"
+  },
+  "files": [
+    "dist/"
   ],
   "license": "MIT"
 }
