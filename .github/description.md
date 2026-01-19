@@ -1,0 +1,1 @@
+[Repository Description] A modern, accessible React component library that bridges design and engineering. 50+ production-ready components built with TypeScript, Tailwind CSS, and Radix UI. Includes Figma library and Storybook docs.
