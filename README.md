@@ -12,7 +12,6 @@ Part of [The Wednesday Collective](https://www.thewednesdaycollective.com/)
 
 - **Figma Library**: [Atelier (Figma)](https://www.figma.com/design/5JADpXkx4NjukMAmWfvdFq/Atelier?node-id=7-917&t=b5Hbc0eZ4u6vIXcT-1)
 
-— Mirabelle
 
 ## Tech Stack
 
@@ -27,7 +26,7 @@ Part of [The Wednesday Collective](https://www.thewednesdaycollective.com/)
 
 ## What's Inside
 
-50+ production-ready components designed for real-world applications:
+Production-ready components designed for real-world applications:
 
 - **Forms**: Input, Select, Checkbox, Radio, Textarea, and more
 - **Layout**: Card, Sheet, Dialog, Drawer, Sidebar
