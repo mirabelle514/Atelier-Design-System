@@ -8,6 +8,57 @@ Atelier is the design system behind every template and tool I build — engineer
 
 Part of [The Wednesday Collective](https://www.thewednesdaycollective.com/)
 
+## Development Process
+
+### Challenge
+Create a production-ready design system that bridges the gap between Figma designs and React code, with full TypeScript support and accessibility compliance.
+
+### Technical Decisions
+
+**Component Architecture**
+- Built on Radix UI primitives for accessibility foundation
+- Used Class Variance Authority for type-safe variant management
+- Chose Vite over Create React App for faster build times and better DX
+
+**Design Token Strategy**
+- Implemented Tailwind CSS for utility-first styling approach
+- Created semantic color naming system for consistent usage
+- Established 8px grid system for spacing consistency
+
+**TypeScript Implementation**
+- Defined strict prop interfaces for all components
+- Used discriminated unions for variant typing
+- Implemented proper generic types for compound components
+
+### My Contribution
+
+**What I Built:**
+- Designed the component API surface and prop patterns
+- Implemented accessibility features (ARIA labels, keyboard navigation, focus management)
+- Created the build pipeline and development workflow
+- Integrated with Figma library for design-to-code workflow
+- Optimized bundle size and tree-shaking capabilities
+
+**AI-Assisted Development:**
+- Used Claude for initial component scaffolding and TypeScript interfaces
+- Iterated on AI suggestions to match Radix UI patterns and accessibility requirements
+- Refined styling system to align with Tailwind's utility-first philosophy
+- Debugged complex TypeScript generic types and variant compositions
+
+**Skills Demonstrated:**
+- Component library architecture and design system principles
+- TypeScript advanced types and generics
+- Accessibility standards (WCAG 2.1 AA)
+- Build tooling and optimization
+- Design-to-code workflow integration
+
+### Real-World Impact
+
+This design system is used across all projects in my portfolio, demonstrating:
+- Reusability and scalability of the component architecture
+- Consistent UX across different applications
+- Maintainability through type-safe APIs
+
 ## Links
 
 - **Figma Library**: [Atelier (Figma)](https://www.figma.com/design/5JADpXkx4NjukMAmWfvdFq/Atelier?node-id=7-917&t=b5Hbc0eZ4u6vIXcT-1)
